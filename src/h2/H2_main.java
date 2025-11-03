@@ -8,35 +8,18 @@ public class H2_main {
 
     public static void main(String[] args) {
 
-        int i = 1;
-        int j = 2;
-        int k = 3;
-        int min;
-        int max;
+    	int jahr;
+		boolean schalt;
 
-        /*
-		i = RandomGenerator.getDefault().nextInt(-20, 20);
-        j = RandomGenerator.getDefault().nextInt(-20, 20);
-        k = RandomGenerator.getDefault().nextInt(-20, 20);
-		*/
+		jahr = Randomgenerator.getDefault().nextInt(1900,3000)
+		
+		if(jahr % 400 == 0) schalt = true;
+		else if (jahr % 100 == 0) schalt = false;
+		else if (jahr % 4 == 0) schalt = true;
+		else schalt = false;
 
-        List<Integer> list = new ArrayList<>();
-        list.add(i);
-        list.add(j);
-        list.add(k);
-
-        System.out.println(list.toString());
-
-        list.sort(Integer::compareTo);
-
-        System.out.println(list.toString());
-
-        min = list.getFirst();
-        max = list.getLast();
-
-        System.out.println(min);
-        System.out.println(max);
-
+		System.out.println("Jahr: " + jahr + ", Schalt: " + schalt)
+        
     }
 
 }
