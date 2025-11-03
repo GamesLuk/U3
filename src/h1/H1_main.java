@@ -15,16 +15,15 @@ public class H1_main {
         /*
         guthaben = RandomGenerator.getDefault().nextDouble(-1000, 1000);
         monEingang = RandomGenerator.getDefault().nextDouble(0, 2000);
-        rating = RandomGenerator.getDefault().nextInt(1, 6);*/
+        rating = RandomGenerator.getDefault().nextInt(1, 6);
         warnhinweis = RandomGenerator.getDefault().nextBoolean();
-
+        */
 
         negativ = false;
 
         System.out.println("Guthaben: " + guthaben);
         System.out.println("Monatlicher Eingang: " + monEingang);
         System.out.println("Rating: " + rating);
-        System.out.println("Warnhinweis: " + warnhinweis);
         System.out.println("Negativ: " + negativ);
 
         if (guthaben < 0) {

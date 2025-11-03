@@ -9,14 +9,23 @@ public class H3_main {
     	int max;
 		int fix;
 		int wartend;
-		boolean istVoll
+		boolean istVoll;
 
-		while (wartend > 0 && fix <= max) {
+        max = RandomGenerator.getDefault().nextInt(5,21);
+        fix = RandomGenerator.getDefault().nextInt(0, max);
+        wartend = RandomGenerator.getDefault().nextInt(0, 25);
+
+        System.out.println("Max Gäste: " + max + " ,fixe Gäste: " + fix + " ,Wartend: " + wartend);
+
+		while (wartend > 0 && fix < max) {
 			wartend -= 1;
 			fix += 1;
 		}
 
 		istVoll = fix == max;
+
+        System.out.println("Max Gäste: " + max + " ,fixe Gäste: " + fix + " ,Wartend: " + wartend);
+        System.out.println("Ist voll: " + istVoll);
 		
     }
 
