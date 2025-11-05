@@ -6,10 +6,10 @@ public class H2_main {
 
     public static void main(String[] args) {
 
-    	int jahr;
+    	int jahr = 2025;
 		boolean schalt;
 
-		jahr = RandomGenerator.getDefault().nextInt(1900,3000);
+		//jahr = RandomGenerator.getDefault().nextInt(1900,3000);
 		
 		if(jahr % 400 == 0) schalt = true;
 		else if (jahr % 100 == 0) schalt = false;
